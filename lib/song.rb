@@ -6,10 +6,10 @@ class Song
   extend Memorable::ClassMethods
   extend Findable
   
-  @@all = []
-  
   attr_accessor :name
   attr_reader :artist
+  
+  @@all = []
   
   def initialize
     super
